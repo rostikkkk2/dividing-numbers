@@ -1,28 +1,28 @@
-var i = 0;
+var flag = false;
 
 var ask_num_one;
 var ask_num_two;
 
-while (i == 0) {
+while (flag == false) {
   ask_num_one = +prompt("введите число");
   if (ask_num_one > 0 && !isNaN(ask_num_one)){
-    i = 1;
+    flag = true;
   }
 }
 
-var i = 0;
+var flag = false;
 
-while (i == 0) {
+while (flag == false) {
   ask_num_two = +prompt("на какое число вы хотите поделить?");
   if (ask_num_two > 0 && !isNaN(ask_num_two)){
-    i = 1;
+    flag = true;
   }
 }
 
 var res = ask_num_one / ask_num_two;
 
 if(ask_num_one % ask_num_two == 0){
-  alert(res + " без остачи");
+  alert(res + " - результат без остачи");
 }else{
-  alert(res + " с остачей");
+  alert(res + " - результат с остачей");
 }
