@@ -10,7 +10,7 @@ while (flag == false) {
   }
 }
 
-var flag = false;
+flag = false;
 
 while (flag == false) {
   ask_num_two = +prompt("на какое число вы хотите поделить?");
@@ -20,9 +20,4 @@ while (flag == false) {
 }
 
 var res = ask_num_one / ask_num_two;
-
-if(ask_num_one % ask_num_two == 0){
-  alert(res + " - результат без остачи");
-}else{
-  alert(res + " - результат с остачей");
-}
+ask_num_one % ask_num_two == 0 ? alert(res + " - результат без остачи") : alert(res + " - результат с остачей");
